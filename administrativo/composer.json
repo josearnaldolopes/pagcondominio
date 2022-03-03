@@ -1,0 +1,14 @@
+{
+    "name": "PagCOndomínio",
+    "description": "Seu novo jeito de pagar condomínio",
+    "authors": [
+        {
+            "name": "José Arnaldo",
+            "email": "josearnaldo.net@gmail.com"
+        }
+    ],
+    "require": {
+    	"php": ">=7.1.14",
+        "andersondanilo/cnab_php": "1.3.*"
+    }
+}
