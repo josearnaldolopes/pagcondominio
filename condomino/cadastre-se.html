@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<title>Pag Condominio | Cadastre-se</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta http-equiv="Cache-Control" content="no-cache" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<meta name="description" content="O novo jeito de pagar seu condomínio">
+		<meta name="keywords" content="pagamento, fintec, banco, cartão, boleto, pix">
+		<meta name="author" content="pagcondominio.com by josearnaldo.net">
+		<link rel="icon" type="image/png" href="imagens/logos/icon-32x32.png">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+		<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+		<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<header id="header"></header>
+
+			<!-- Main -->
+				<section id="main" class="container medium">
+					<header>
+						<h2>Cadastre-se</h2>
+						<p>Envie um email para: <strong>contato@pagcondominio.com</strong></p>
+					</header>
+					<div class="box">
+						<form method="post" action="">
+							<div class="form-row row gtr-50 gtr-uniform">
+							  
+							<div class="form-group col-6">
+							  <label for="NomeCond">Condomínio</label>
+							  <select name="condominio" id="NomeCond">
+								<option value="1">Alvorada</option>
+								<option value="2">Canto das Almas</option>
+								<option value="3">Bela do Bairro</option>
+								<option value="4">Altos de Baixo</option>
+							  </select>
+							</div>
+							<div class="form-group col-6">
+								<label for="email">Email</label>
+								<input type="email" name="email" class="form-control CPF" id="email" placeholder="Email" value="">
+							</div>
+							<div class="form-group col-6">
+							  <label for="documento">Documento</label>
+							  <input type="text" name="documento" class="form-control CPF" id="documento" placeholder="CPF" value="">
+							</div>
+							<div class="form-group col-6">
+							  <label for="senha">Senha</label>
+							  <input type="password" name="senha" id="senha" class="form-control" placeholder="Senha" value="" required>
+							</div>
+							<div class="form-group col-8"></div>
+							<div class="form-group col-12">
+							  <button type="submit" class="button primary" name="botao" value="Enviar"><i class="glyphicon glyphicon-ok"></i>  Cadastrar</button>
+							  <a href="logar"><button type="button" class="button primary" name="botao" value=""><i class="glyphicon glyphicon-ok"></i>  Já sou cadastrado</button></a>
+							</div>
+							</div>
+						  </form>
+					</div>
+				</section>
+
+			<!-- Footer -->
+			<footer id="footer"></footer>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script type="text/babel" src="assets/js/react.js"></script>
+
+	</body>
+</html>

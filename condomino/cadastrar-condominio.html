@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<title>PagCondominio | O novo jeito de pagar seu condomínio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" type="image/png" href="imagens/logos/icon-32x32.png">
+		<meta http-equiv="Cache-Control" content="no-cache" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+		<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+		<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<header id="header"></header>
+
+			<!-- Main -->
+				<section id="main" class="container medium">
+					<header>
+						<h2>Cadastre seu condomínio</h2>
+					</header>
+					<div class="box">
+						<form method="post" action="">
+							<div class="form-row row gtr-50 gtr-uniform"">
+							  
+							<div class="form-group col-6">
+							  <label for="NomeCond">Nome do Condomínio</label>
+							  <input type="text" name="condominio" class="form-control" id="NomeCond" placeholder="Nome do Condomínio" value="" required>
+							</div>
+							<div class="form-group col-6">
+							  <label for="documento">Documento</label>
+							  <input type="text" name="documento" class="form-control cnpj" id="documento" placeholder="CNPJ" value="" style="padding: 6px 6px;">
+							</div>
+							<div class="form-group col-3">
+							  <label for="cep">CEP</label>
+							  <input type="text" name="cep" id="cep" class="form-control" placeholder="CEP" value="" required>
+							</div>
+							<div class="form-group col-6">
+							  <label for="logradouro">Logradouro</label>
+							  <input type="text" name="logradouro" id="logradouro" class="form-control" placeholder="Endereço" value="" required>
+							</div>
+							<div class="form-group col-3">
+							  <label for="numero">Número</label>
+							  <input type="text" name="numero" id="numero" class="form-control" placeholder="Num." value="" required>
+							</div>
+							<div class="form-group col-5">
+							  <label for="bairro">Bairro</label>
+							  <input type="text" name="bairro" id="bairro" class="form-control" placeholder="Bairro" value="" required>
+							</div>
+							<div class="form-group col-5">
+							  <label for="cidade">Cidade</label>
+							  <input type="text" name="cidade" id="cidade" class="form-control" placeholder="Cidade" value="" required>
+							</div>
+							<div class="form-group col-2">
+							  <label for="estado">Estado</label>
+							  <input type="text" name="estado" id="estado" class="form-control" placeholder="UF" value="" required>
+							</div>
+							<div class="form-group col-4">
+							  <label for="banco">Banco</label>
+							  <input type="text" name="banco" class="form-control" id="banco" placeholder="Banco" value="">                   
+							</div>
+							<div class="form-group col-4">
+							  <label for="agencia">Agência</label>
+							  <input type="text" name="agencia" class="form-control" id="agencia" placeholder="Agência" value="">                   
+							</div>
+							<div class="form-group col-4">
+							  <label for="conta">Conta</label>
+							  <input type="text" name="conta" class="form-control" id="conta" placeholder="Conta" value="">                   
+							</div> 
+							<div class="form-group col-8"></div>
+							<div class="form-group col-12">
+							  <button type="submit" class="button primary" name="botao" value="Alterar"><i class="glyphicon glyphicon-ok"></i>  Cadastrar Condomínio</button>
+							</div>
+							</div>
+						  </form>
+					</div>
+				</section>
+
+			<!-- Footer -->
+			<footer id="footer"></footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script type="text/babel" src="assets/js/react.js"></script>
+
+	</body>
+</html>

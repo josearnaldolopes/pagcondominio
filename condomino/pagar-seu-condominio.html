@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<title>PagCondominio | O novo jeito de pagar seu condomínio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" type="image/png" href="imagens/logos/icon-32x32.png">
+		<meta http-equiv="Cache-Control" content="no-cache" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+		<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+		<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<header id="header"></header>
+
+			<!-- Main -->
+				<section id="main" class="container medium">
+					<header>
+						<h2>Pagar seu Condominio</h2>
+					</header>
+					<div class="box">
+						<form action="??">
+							<div class="row gtr-50 gtr-uniform">
+								<div class="col-6 col-12-mobilep">
+									<input type="text" name="nome" id="nome" value="" placeholder="Nome">
+								</div>
+								<div class="col-6 col-12-mobilep">
+									<input type="text" name="numero" id="numero" value="" placeholder="Número">
+								</div>
+								<div class="col-4 col-12-mobilep">
+									<input type="text" name="cvv" id="cvv" value="" placeholder="CVV">
+								</div>
+								<div class="col-4 col-12-mobilep">
+									<input type="text" name="mes" id="mes" value="" placeholder="Mês">
+								</div>
+								<div class="col-4 col-12-mobilep">
+									<input type="text" name="ano" id="ano" value="" placeholder="Ano">
+								</div>
+								<div class="col-4 col-12-mobilep">
+									<input type="text" name="valor" id="valor" value="145.89" placeholder="Valor">
+								</div>
+								<div class="col-4 col-12-mobilep">
+									<select id="parcela" name="parcela">
+										<option value="1">À vista</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									  </select>
+								</div>
+								<div class="col-4 col-12-mobilep">
+									<p>Total: <span id="total"></span></p>
+								</div>
+								<div class="col-12">
+									<ul class="actions special">
+										<li><input type="button" id="pagar" value="Pagar {Teste}"></li>
+									</ul>
+								</div>
+								<div class="col-12">
+									<p id="pagamento"></p>
+								</div>
+							</div>
+						</form>
+					</div>
+				</section>
+
+				<!-- Main -->
+				<section id="main" class="container medium">
+					<header>
+						<h2>Gerar boleto</h2>
+					</header>
+					<div class="box">
+						<form action="??">
+							<div class="row gtr-50 gtr-uniform">
+								<div class="col-12">
+									<ul class="actions special">
+										<li><input type="button" id="boleto" value="Gerar Boleto {Teste}"></li>
+									</ul>
+								</div>
+								<div class="col-12">
+									<p id="pagamentoboleto"></p>
+								</div>
+							</div>
+						</form>
+					</div>
+				</section>
+
+				<!-- Main -->
+				<section id="main" class="container medium">
+					<header>
+						<h2>Pix</h2>
+					</header>
+					<div class="box">
+						<form action="??">
+							<div class="row gtr-50 gtr-uniform">
+								<div class="col-12">
+									<ul class="actions special">
+										<li><input type="button" id="pix" value="PIX {Teste}"></li>
+									</ul>
+								</div>
+								<div class="col-12">
+									<p id="pagamentopix"></p>
+								</div>
+							</div>
+						</form>
+					</div>
+				</section>
+							
+			<!-- Footer -->
+			<footer id="footer"></footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/pagamento.js"></script>
+			<script type="text/babel" src="assets/js/react.js"></script>
+
+	</body>
+</html>
