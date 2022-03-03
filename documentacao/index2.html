@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+    <title>Portal DEV | PagCondominio</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portal DEV | PagCondominio">
+    <meta name="author" content="José Arnaldo | www.josearnaldo.net">    
+    <link rel="icon" type="image/png" href="https://pagcondominio.com/wp-content/uploads/2020/05/cropped-logopg-2-32x32.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://pagcondominio.com/wp-content/uploads/2020/05/cropped-logopg-2-32x32.png">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    <!-- FontAwesome JS-->
+	<script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS" crossorigin="anonymous"></script>
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+</head> 
+
+<body class="docs-page">    
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible mr-2 d-xl-none" type="button">
+	                    <span></span>
+	                    <span></span>
+	                    <span></span>
+	                </button>
+	                <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon mr-2" src="assets/images/logoescuro.png" alt="logo"></a></div>    
+                </div>
+	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
+	            </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+				    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span class="theme-icon-holder mr-2"><i class="fas fa-map-signs"></i></span>Introdução</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#sobre">Sobre</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#instalacao"><span class="theme-icon-holder mr-2"><i class="fas fa-arrow-down"></i></span>Instalação</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#tipo-api">Tipo de API</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#api"><span class="theme-icon-holder mr-2"><i class="fas fa-box"></i></span>APIs</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#autenticacao">Autenticação</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#credenciamento-de-condominio">Credenciamento de condomínio</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#dados-condominio">Obter dados do condomínio</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#cadastro-de-condomino">Cadastro de condomino</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#dados-condomino">Obter dados do condomíno</a></li>
+				    <!-- <li class="nav-item"><a class="nav-link scrollto" href="#condomino-endpoint"><small><i class="fas fa-link"></i></small> Endpoint condomíno</a></li> -->
+				    <!-- <li class="nav-item"><a class="nav-link scrollto" href="#lista-condominio"><i class="fas fa-chart-line" style="color:#d6d6d6;"></i> Lista condominio</a></li> -->
+				    <li class="nav-item section-title mt-3"><a class="nav-link" href="https://github.com/pagcondominio" target="_blank"><span class="theme-icon-holder mr-2"><i class="fab fa-github"></i></span>Github</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link" href="mailto:dev@pagcondominio.com"><span class="theme-icon-holder mr-2"><i class="fas fa-envelope"></i></span><small>dev@pagcondominio.com</small></a></li>
+			    </ul>
+
+		    </nav>
+	    </div>
+	    <div class="docs-content">
+		    <div class="container">
+			    <article class="docs-article" id="section-1">
+				    <header class="docs-header">
+
+					    <h1 class="docs-heading">Introdução <span class="docs-time">Última atualização: 01/12/2020</span></h1>
+					    <section class="docs-intro">
+							<p>Sabemos que exigirá muito trabalho estamos dispostos a trilhar este caminho junto com vocês.</p>
+							<p>API criada para envio de dados entre ERP e o PagCondominio</p>
+						</section>	
+						
+				    </header>
+				    <section class="docs-section" id="sobre">
+						<h2 class="section-heading">Sobre</h2>
+						<p>A API do novo jeito de pagar seu condomínio</p>
+						<p>É uma fintech de meios de pagamentos que possibilita os condôminos a optarem por uma forma de pagamentos, seja por cartão de credito, cartão de debito, Debito automático ou boleto, facilitando o dia dia do condomínio e reduzindo a inadimplência. Simples e fácil, Já nascemos plugados com grandes players do mercado como adquirentes e seguradoras internacionais.</p>
+					</section>
+					
+			    </article>
+			    
+			    <article class="docs-article" id="instalacao">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Instalação</h1>
+					    <section class="docs-intro">
+						    <!-- <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p> -->
+						</section>
+				    </header>
+				     <section class="docs-section" id="tipo-api">
+						<h2 class="section-heading">Tipo de API</h2>
+						<p>API REST</p>
+					</section>
+			    </article>
+			    
+			    
+			    <article class="docs-article" id="api">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">APIs</h1>
+					    <section class="docs-intro">
+						    <p>Fácil instalação e alta performance</p>
+						</section>
+				    </header>
+				    <section class="docs-section" id="autenticacao">
+						<h2 class="section-heading">Autenticação</h2>
+						<p>Com o cadastro do ERP liberado pela PagCondominio, será enviado um email com login e senha unico e intransferível.</p>
+						 <div class="callout-block callout-block-success">
+                            <div class="content">
+                                <h4 class="callout-title">
+	                                <span class="callout-icon-holder mr-1">
+		                                <i class="fas fa-thumbs-up"></i>
+		                            </span><!--//icon-holder-->
+	                                Autenticação
+	                            </h4>
+                                <p>Use Basic Auth com login e senha enviado pelo PagCondominio</p>
+                            </div><!--//content-->
+                        </div>
+					</section>
+
+				    <section class="docs-section" id="credenciamento-de-condominio">
+						<h2 class="section-heading">Credenciamento de condomínio</h2>
+						<p>Credenciar o condomínio existe duas formas: <br> 1. Através do envio dos dados de CPF ou CNPJ, endereço completo, conta bancária e responsável para <b>contato@pagcondominio.com</b><br> 2. Ou através de nossas Apis abaixo.<br>Dentro de 7 dias, o condomínio estará apto a receber por cartão de crédito e será enviado um email de confirmação</p>
+					</section>
+
+					<section class="docs-section" id="credenciamento-de-condominio-endpoint">
+						<h2 class="section-heading">URL ENDPOINT</h2>
+						 <div class="callout-block callout-block-warning">
+                            <div class="content">
+                                <h4 class="callout-title">
+	                                <span class="callout-icon-holder mr-1">
+		                                <i class="fa fa-database" aria-hidden="true"></i>
+		                            </span><!--//icon-holder-->
+	                                GET | POST
+	                            </h4>
+                                <p>https://api.pagcondominio.com/v1/erp/condominio/token/{{UsuarioERP}}</p>
+                            </div><!--//content-->
+                        </div>
+                        <p>header 'accept: application/json'</p>
+                        <p>header 'content-type: application/json'</p>
+					</section>
+
+<small>Json da requisição</small>
+<pre class="rounded">
+<code class="json hljs">  [
+    {
+     <span class="hljs-attr">"condominio"</span>: <span class="hljs-string">"Nome do Condomínio"</span>,
+     <span class="hljs-attr">"administradora"</span>: <span class="hljs-string">"Nome da administradora"</span>,
+     <span class="hljs-attr">"cep"</span>: <span class="hljs-string">"CEP do endereço"</span>,
+     <span class="hljs-attr">"logradouro"</span>: <span class="hljs-string">"Endereço"</span>,
+     <span class="hljs-attr">"numero"</span>: <span class="hljs-string">"Número do logradouro"</span>,
+     <span class="hljs-attr">"bairro"</span>: <span class="hljs-string">"Bairro do logradouro"</span>,
+     <span class="hljs-attr">"cidade"</span>: <span class="hljs-string">"Cidade do bairro"</span>,
+     <span class="hljs-attr">"estado"</span>: <span class="hljs-string">"Sigla do Estado"</span>,
+     <span class="hljs-attr">"documento"</span>: <span class="hljs-string">"CPF ou CNPJ"</span>,
+     <span class="hljs-attr">"nomebanco"</span>: <span class="hljs-string">"Nome do banco"</span>,
+     <span class="hljs-attr">"numeroagencia"</span>: <span class="hljs-string">"Número da agência"</span>,
+     <span class="hljs-attr">"numeroconta"</span>: <span class="hljs-string">"Número da conta"</span>
+    }
+  ]
+</code>
+</pre>
+
+<small>Json de resposta com sucesso</small>
+<pre class="rounded">
+<code class="json hljs">  [
+    }
+     <span class="hljs-attr">"status"</span>: <span class="hljs-string">"Cadastro de condominio efetuado com sucesso"</span>
+    }
+  ]
+</code>
+</pre>
+
+<small>Json de resposta com erro</small>
+<pre class="rounded">
+<code class="json hljs">  [
+    }
+     <span class="hljs-attr">"status"</span>: <span class="hljs-string">"Ocorreu um erro no cadastro de condominio"</span>
+    }
+  ]
+</code>
+</pre>
+
+<section class="docs-section" id="dados-condominio">
+	<h2 class="section-heading">Obter dados do condomínio</h2>
+	<p>Uma vez aprovado e com a chave em mãos é possivel ver os dados do condominio</p>
+</section>
+
+<section class="docs-section" id="credenciamento-de-condominio-endpoint">
+	<h2 class="section-heading">URL ENDPOINT</h2>
+	 <div class="callout-block callout-block-warning">
+		<div class="content">
+			<h4 class="callout-title">
+				<span class="callout-icon-holder mr-1">
+					<i class="fa fa-database" aria-hidden="true"></i>
+				</span><!--//icon-holder-->
+				GET
+			</h4>
+			<p>https://api.pagcondominio.com/v1/erp/condominio/token/{{UsuarioERP}}/chave/{{TokenCondominio}}</p>
+		</div><!--//content-->
+	</div>
+	<p>header 'accept: application/json'</p>
+	<p>header 'content-type: application/json'</p>
+</section>
+
+<small>Json da resposta</small>
+<pre class="rounded">
+<code class="json hljs">  [
+    }
+     <span class="hljs-attr">"condominio"</span>: <span class="hljs-string">"Nome do Condomínio"</span>,
+     <span class="hljs-attr">"administradora"</span>: <span class="hljs-string">"Nome da administradora"</span>,
+     <span class="hljs-attr">"cep"</span>: <span class="hljs-string">"CEP do endereço"</span>,
+     <span class="hljs-attr">"logradouro"</span>: <span class="hljs-string">"Endereço"</span>,
+     <span class="hljs-attr">"numero"</span>: <span class="hljs-string">"Número do logradouro"</span>,
+     <span class="hljs-attr">"bairro"</span>: <span class="hljs-string">"Bairro do logradouro"</span>,
+     <span class="hljs-attr">"cidade"</span>: <span class="hljs-string">"Cidade do bairro"</span>,
+     <span class="hljs-attr">"estado"</span>: <span class="hljs-string">"Estado da cidade"</span>,
+     <span class="hljs-attr">"documento"</span>: <span class="hljs-string">"CPF ou CNPJ"</span>,
+     <span class="hljs-attr">"nomebanco"</span>: <span class="hljs-string">"Nome do banco"</span>,
+     <span class="hljs-attr">"numeroconta"</span>: <span class="hljs-string">"Número da conta"</span>,
+     <span class="hljs-attr">"taxavista"</span>: <span class="hljs-string">"Valor em porcentagem (ex: 0.5%)"</span>,
+     <span class="hljs-attr">"taxacredito"</span>: <span class="hljs-string">"Valor em porcentagem (ex: 4%)"</span>,
+     <span class="hljs-attr">"status"</span>: <span class="hljs-string">"Aprovado para produção"</span>
+    }
+  ]
+</code>
+</pre>
+
+
+<section class="docs-section" id="cadastro-de-condomino">
+	<h2 class="section-heading">Cadastro de condomíno</h2>
+	<p>Uma vez credenciado e liberado o condomínio, é possivel manipular os condominos de cada condomínio.</p>
+</section>
+
+<section class="docs-section" id="cadastro-de-condomino-endpoint">
+	<h2 class="section-heading">URL ENDPOINT</h2>
+	 <div class="callout-block callout-block-warning">
+		<div class="content">
+			<h4 class="callout-title">
+				<span class="callout-icon-holder mr-1">
+					<i class="fa fa-database" aria-hidden="true"></i>
+				</span><!--//icon-holder-->
+				GET | POST
+			</h4>
+			<p>https://api.pagcondominio.com/v1/erp/condominio/token/{{UsuarioERP}}/chave/{{TokenCondominio}}</p>
+		</div><!--//content-->
+	</div>
+	<p>header 'accept: application/json'</p>
+	<p>header 'content-type: application/json'</p>
+</section>
+
+<small>Json da requisição</small>
+<pre class="rounded">
+<code class="json hljs">  [
+    }
+     <span class="hljs-attr">"condomino"</span>: <span class="hljs-string">"Nome do Condomíno"</span>,
+     <span class="hljs-attr">"apartamento"</span>: <span class="hljs-string">"Número do Apartamento"</span>,
+     <span class="hljs-attr">"bloco"</span>: <span class="hljs-string">"Bloco do Apartamento"</span>,
+     <span class="hljs-attr">"documento"</span>: <span class="hljs-string">"CPF ou CNPJ"</span>,
+     <span class="hljs-attr">"nome"</span>: <span class="hljs-string">"Razão Social ou nome"</span>,
+     <span class="hljs-attr">"valor"</span>: <span class="hljs-string">"Valor em centavos"</span>,
+     <span class="hljs-attr">"cartao"</span>: <span class="hljs-string">"Número do cartão"</span>,
+     <span class="hljs-attr">"nomecartao"</span>: <span class="hljs-string">"Nome como gravado no cartão"</span>,
+     <span class="hljs-attr">"validade"</span>: <span class="hljs-string">"Validade gravada no cartao"</span>,
+     <span class="hljs-attr">"vencimento"</span>: <span class="hljs-string">"Dia do vencimento"</span>,
+     <span class="hljs-attr">"cvv"</span>: <span class="hljs-string">"CVV do cartão"</span>,
+     <span class="hljs-attr">"cpf_2"</span>: <span class="hljs-string">"CPF do segundo Condomíno [Opicional]"</span>,
+     <span class="hljs-attr">"cartao_2"</span>: <span class="hljs-string">"Numero do segundo cartão [Opicional]"</span>,
+     <span class="hljs-attr">"nomecartao_2"</span>: <span class="hljs-string">"Nome como gravado no segundo cartão [Opicional]"</span>,
+     <span class="hljs-attr">"validade_2"</span>: <span class="hljs-string">"Validade gravada no segundo cartão [Opicional]"</span>,
+     <span class="hljs-attr">"vencimento_2"</span>: <span class="hljs-string">"Dia do vencimento segundo cartão [Opicional]"</span>,
+     <span class="hljs-attr">"cvv_2"</span>: <span class="hljs-string">"CVV do segundo cartão [Opicional]"</span>,
+     <span class="hljs-attr">"recorrencia"</span>: <span class="hljs-literal">true <span class="hljs-string">ou</span> false</span>,
+     <span class="hljs-attr">"parcela"</span>: <span class="hljs-string">"0 [Máximo 3 parcelas. Se 0 ou vazio equivale a parcela única]"</span>,
+     <span class="hljs-attr">"valorparcela"</span>: <span class="hljs-string">"Valor da parcela em centavos"</span>,
+     <span class="hljs-attr">"salvar"</span>: <span class="hljs-string"><span class="hljs-literal">true <span class="hljs-string">ou</span> false</span>
+    }
+  ]
+</code>
+</pre>
+
+<small>Json de resposta com sucesso (salvando dados para futuras transações)</small>
+<pre class="rounded">
+<code class="json hljs">  [
+    }
+     <span class="hljs-attr">"token"</span>: <span class="hljs-string">"[String do token]",</span>
+     <span class="hljs-attr">"status"</span>: <span class="hljs-string">"Cadastro de condomino efetuado com sucesso"</span>
+    }
+  ]
+</code>
+</pre>
+
+<small>Json de resposta com sucesso (pagamento)</small>
+<pre class="rounded">
+<code class="json hljs">  [
+    }
+     <span class="hljs-attr">"comprovante"</span>: <span class="hljs-string">"[String do comprovante]",</span>
+     <span class="hljs-attr">"status"</span>: <span class="hljs-string">"Cadastro de condomino efetuado com sucesso"</span>
+    }
+  ]
+</code>
+</pre>
+
+<small>Json de resposta com erro</small>
+<pre class="rounded">
+<code class="json hljs">  [
+    }
+     <span class="hljs-attr">"status"</span>: <span class="hljs-string">"Ocorreu um erro no cadastro de condomino"</span>
+    }
+  ]
+</code>
+</pre>
+					
+			    </article><!--//docs-article-->
+
+			    <footer class="footer"></footer>
+		    </div> 
+	    </div>
+    </div><!--//docs-wrapper-->
+    
+       
+    <!-- Javascript -->          
+    <script src="assets/plugins/jquery-3.4.1.min.js"></script>
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    
+ 
+    <!-- Page Specific JS -->
+    <!-- <script src="assets/js/highlight-custom.js"></script>   -->
+    <script src="assets/plugins/jquery.scrollTo.min.js"></script>
+    <!-- <script src="assets/plugins/lightbox/dist/ekko-lightbox.min.js"></script>  -->
+    <script src="assets/js/docs.js"></script>
+
+</body>
+</html> 
+
